@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Us - Social Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-width: 100vw;
+            max-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .overlay-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clickable-area {
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .clickable-area:hover {
+            transform: scale(1.05);
+        }
+
+        /* TikTok Button - positioned at approximately 35% from top */
+        .tiktok-btn {
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 42%;
+            height: 7%;
+        }
+
+        /* Instagram Button - positioned at approximately 48% from top */
+        .instagram-btn {
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 8%;
+        }
+
+        /* WhatsApp Button - positioned at approximately 61% from top */
+        .whatsapp-btn {
+            top: 61%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 42%;
+            height: 7%;
+        }
+
+        /* Facebook Button - positioned at approximately 75% from top */
+        .facebook-btn {
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 8%;
+        }
+
+        /* Optional: Add visual feedback on hover */
+        .clickable-area::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            transition: background 0.3s ease;
+            border-radius: 25px;
+        }
+
+        .clickable-area:hover::after {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tiktok-btn {
+                width: 70%;
+                height: 6%;
+            }
+            
+            .instagram-btn {
+                width: 75%;
+                height: 7%;
+            }
+            
+            .whatsapp-btn {
+                width: 70%;
+                height: 6%;
+            }
+            
+            .facebook-btn {
+                width: 75%;
+                height: 7%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tiktok-btn {
+                width: 80%;
+                height: 5.5%;
+            }
+            
+            .instagram-btn {
+                width: 85%;
+                height: 6.5%;
+            }
+            
+            .whatsapp-btn {
+                width: 80%;
+                height: 5.5%;
+            }
+            
+            .facebook-btn {
+                width: 85%;
+                height: 6.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Background Image -->
+        <img src="FOLLOW US.png" alt="Follow Us" class="background-image">
+        
+        <!-- Clickable Overlay Areas -->
+        <div class="overlay-container">
+            <!-- TikTok Button -->
+            <a href="https://www.tiktok.com/@syaa.clothing" 
+               target="_blank" 
+               class="clickable-area tiktok-btn"
+               aria-label="Follow us on TikTok"></a>
+            
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/syaa_clothing_" 
+               target="_blank" 
+               class="clickable-area instagram-btn"
+               aria-label="Follow us on Instagram"></a>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/94771760809" 
+               target="_blank" 
+               class="clickable-area whatsapp-btn"
+               aria-label="Contact us on WhatsApp"></a>
+            
+            <!-- Facebook Button -->
+            <a href="https://www.facebook.com/SyaaClothing" 
+               target="_blank" 
+               class="clickable-area facebook-btn"
+               aria-label="Follow us on Facebook"></a>
+        </div>
+    </div>
+</body>
+</html>
