@@ -77,12 +77,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
             border-radius: 50px;
-            border: 1px solid red; /* Temporary border for alignment */
+            background-color: transparent;
         }
 
         .clickable-btn:hover {
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         }
 
         .clickable-btn:active {
