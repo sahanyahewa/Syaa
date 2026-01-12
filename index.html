@@ -53,64 +53,49 @@
         .clickable-area {
             position: absolute;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: all 0.3s ease;
+            border-radius: 50px;
         }
 
         .clickable-area:hover {
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .clickable-area:active {
+            transform: scale(0.98);
         }
 
         /* TikTok Button - positioned at approximately 38% from top */
         .tiktok-btn {
             top: 38%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 35%;
+            left: 32%;
+            width: 28%;
             height: 6%;
         }
 
         /* Instagram Button - positioned at approximately 51% from top */
         .instagram-btn {
             top: 51%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 40%;
+            left: 42%;
+            width: 33%;
             height: 6.5%;
         }
 
         /* WhatsApp Button - positioned at approximately 64% from top */
         .whatsapp-btn {
             top: 64%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 35%;
+            left: 30%;
+            width: 28%;
             height: 6%;
         }
 
         /* Facebook Button - positioned at approximately 78% from top */
         .facebook-btn {
             top: 78%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 40%;
+            left: 40%;
+            width: 33%;
             height: 6.5%;
-        }
-
-        /* Optional: Add visual feedback on hover */
-        .clickable-area::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0);
-            transition: background 0.3s ease;
-            border-radius: 25px;
-        }
-
-        .clickable-area:hover::after {
-            background: rgba(255, 255, 255, 0.1);
         }
 
         /* Responsive adjustments */
